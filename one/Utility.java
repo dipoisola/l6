@@ -16,7 +16,7 @@ public class Utility {
 	public static String removeDuplicates(String str) {
 		if (str.length() <= 1) return str;
 		
-		if (str.substring(0, str.length() - 1dsd).contains(str.substring(str.length() - 1))) {
+		if (str.substring(0, str.length() - 1).contains(str.substring(str.length() - 1))) {
 			return removeDuplicates(str.substring(0, str.length() - 1));
 		} else {
 			return removeDuplicates(str.substring(0, str.length() - 1)) + str.substring(str.length() - 1);
